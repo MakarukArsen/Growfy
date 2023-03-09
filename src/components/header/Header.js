@@ -18,7 +18,7 @@ const Header = () => {
                             <li className={classes.menu__item}>Services</li>
                         </ul>
                         <div className={classes.menu__button}>
-                            <Button>Get started</Button>
+                            <Button>Get started!</Button>
                         </div>
                     </div>
                 </div>
