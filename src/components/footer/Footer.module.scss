@@ -1,0 +1,104 @@
+@use "../../styles/constants.scss";
+
+.footer {
+    &__body {}
+
+    &__row {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__info {
+        flex: 0 0 380px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .footerInfo__logo {
+            svg {}
+        }
+
+        .footerInfo__text {}
+
+        .footerInfo__contacts {
+            display: flex;
+            gap: 15px;
+
+            .infoContacts__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                border: 1px solid rgba(129, 129, 139, 0.9);
+                border-radius: 50%;
+                padding: 5px;
+            }
+        }
+    }
+
+    &__pages {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex: 1 1 auto;
+
+        .footerPages__title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+            color: constants.$title;
+        }
+
+        .footerPages__list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .pagesList__item {
+                cursor: pointer;
+
+                &:hover {
+                    color: constants.$title;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+    }
+
+    &__subscribe {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .footerSubscribe__title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+            color: constants.$title;
+        }
+
+        .footerSubscribe__text {}
+
+        .footerSubscribe__form {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .subscribeForm__input {
+                display: flex;
+                flex: 1 1 100px;
+            }
+
+            .subscribeForm__button {
+                flex: 0 0 135px;
+                height: 54px;
+            }
+        }
+    }
+
+    &__copyright {}
+}

@@ -1,0 +1,39 @@
+@use "../../styles/constants.scss";
+
+.startWithUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: rgba(129, 129, 139, 0.1);
+    border-radius: 30px;
+    padding: 50px 40px;
+
+    .textBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+
+        .title {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 140%;
+            color: constants.$title;
+        }
+
+        .text {}
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .button {
+            width: 160px;
+            height: 50px;
+        }
+    }
+}
